@@ -100,7 +100,7 @@ public class ECommerce {
                 System.out.println("item price : " + cart.get(i).price);
 
                 // for save and like item
-                System.out.print("If you want to save this item for feature profit then you can enter item no otherwise  enter zero : ");
+                System.out.print("If you want to save this item for future profit, you can enter the item number; otherwise, enter zero : ");
                 int saveno = sc.nextInt();
                 if (saveno != 0) {
                     likeitem.add(itemlist.get(saveno - 1));
@@ -108,7 +108,7 @@ public class ECommerce {
 
                 // for addtocart
 
-                System.out.println("If you want to add at add to cart then please enter item no otherwise enter zero : ");
+                System.out.println("If you want to add to the cart, please enter the item number; otherwise, enter zero  : ");
                 int addtocartno = sc.nextInt();
                 if (addtocartno ==1) {
                     cart.add(itemlist.get(addtocartno - 1));
@@ -128,7 +128,7 @@ public class ECommerce {
                 System.out.println("item price : " + cart.get(i).price);
 
                 // for save and like item
-                System.out.print("If you want to save this item for feature profit then you can enter item no otherwise  enter zero : ");
+                System.out.print("If you want to save this item for future profit, you can enter the item number; otherwise, enter zero : ");
                 int saveno = sc.nextInt(); 
                 if (saveno == 1) {
                     likeitem.add(itemlist.get(saveno - 1));
@@ -136,7 +136,7 @@ public class ECommerce {
 
                 // for addtocart
 
-                System.out.println("If you want to add at add to cart then please enter item no otherwise enter zero : ");
+                System.out.println("If you want to add to the cart, please enter the item number; otherwise, enter zero : ");
                 int addtocartno = sc.nextInt();
                 if (addtocartno ==1) {
                     cart.add(itemlist.get(addtocartno - 1));
@@ -157,7 +157,7 @@ public class ECommerce {
                 System.out.println("item price : " + orderhistory.get(i).price);
 
                 // for save and like item
-                System.out.print("If you want to save this item for feature profit then you can enter item no otherwise  enter zero : ");
+                System.out.print("If you want to save this item for feature profit , you can enter item number; otherwise  enter zero : ");
                 int saveno = sc.nextInt();
                 if (saveno ==1) {
                     addinlikeitem(orderhistory.get(i));
@@ -165,7 +165,7 @@ public class ECommerce {
 
                 // for addtocart
 
-                System.out.println("If you want to add at add to cart then please enter 1 otherwise enter zero : ");
+                System.out.println("If you want to add to the cart, please enter the item number; otherwise, enter zero :  ");
                 int addtocartno = sc.nextInt();
                 if (addtocartno ==1) {
                     addtocart(orderhistory.get(i));
@@ -175,17 +175,17 @@ public class ECommerce {
             
 
 
-            System.out.print("Are you want to order any product then enter 1 otherwise enter 0 : ");
+            System.out.print("Are you want to order any product, please  enter 1 otherwise enter 0 : ");
             byte input=sc.nextByte();
             while (input == 1) {
-                System.out.print("Enter item number  for  order that item  (if you don't want to order any product then input the 0 ) :  ");
+                System.out.print("Enter the item number to order that item (if you don't want to order any product, then input 0) :  ");
                 int itemno = sc.nextInt();
 
                 if (itemno ==1) {
                     order(itemno);
                 }
 
-                System.out.print("Are you want to order any product then enter 1 otherwise enter 0 : ");
+                System.out.print("Are you want to order any product, please  enter 1 otherwise enter 0 : ");
                 input=sc.nextByte();
 
 
@@ -199,11 +199,11 @@ public class ECommerce {
         // order
         public void order(int itemno) {
             orderhistory.add(itemlist.get(itemno - 1));
-            System.out.println("Your product ordered succcessfully  and you got 10 supercoin ");
+            System.out.println("Your product ordered succcessfully, and you got 10 supercoin ");
             this.supercoin+=10;
             Scanner sc = new Scanner(System.in);
 
-            System.out.println("If you want to see your order history then enter 1 otherwise enter 0 ");
+            System.out.print("If you want to see your order history, please enter 1 otherwise enter 0 : ");
             int input = sc.nextInt();
             if (input == 1) {
                 showorderhistory();
@@ -257,7 +257,7 @@ public class ECommerce {
                 System.out.println("item price : " + itemlist.get(i).price);
 
                 // for save and like item
-                System.out.print("If you want to save this item for feature profit then you can enter 1 otherwise  enter zero : ");
+                System.out.print("If you want to save this item for feature profit, please you can enter 1; otherwise, enter zero : ");
                 int saveno = sc.nextInt();
                 if (saveno == 1) {
                     addinlikeitem(itemlist.get(i));
@@ -265,24 +265,24 @@ public class ECommerce {
 
                 // for addtocart
 
-                System.out.println("If you want to add at add to cart then please enter 1 otherwise enter zero : ");
+                System.out.println("If you want to add at add to cart, please enter 1; otherwise, enter zero : ");
                 int addtocartno = sc.nextInt();
                 if (addtocartno == 1 ) {
                     addtocart(itemlist.get(i));
                 }
             }
 
-            System.out.print("Are you want to order any product then enter 1 otherwise enter 0 : ");
+            System.out.print("Are you want to order any product, please enter 1; otherwise, enter 0 : ");
             byte input=sc.nextByte();
             while (input == 1) {
                 
-                System.out.print("Enter item number for oreder that item  (if you don't want to order any product then input the 0 ) :  ");
+                System.out.print("Enter the item number to order that item (if you don't want to order any product, then input 0) :  ");
                 int itemno = sc.nextInt();
 
                 if (itemno != 0) {
                     order(itemno);
                 }
-                System.out.print("Are you want to order any product then enter 1 otherwise enter 0 : ");
+                System.out.print("Are you want to order any product, please enter 1; otherwise, enter 0 : ");
                 input=sc.nextByte();
                 
                 
@@ -298,7 +298,7 @@ public class ECommerce {
         // showallinfo 
         private void showallinfo(){
             Scanner sc =new Scanner(System.in);
-            System.out.println("for see the user information enter 1, for see the orderhistory enter 2 , for see the like item or save item enter 3 and for see add to cart to item enter 4 (If you don't want to see any of them then please enter 0 )");
+            System.out.println("To see user information, enter 1; to view order history, enter 2; to check liked or saved items, enter 3; and to view items added to the cart, enter 4. If you don't want to see any of them, please enter 0 :");
             int enterno=sc.nextInt();
             if(enterno == 1){
                 System.out.println("Name : " + this.username);
