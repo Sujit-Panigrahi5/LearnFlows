@@ -78,7 +78,7 @@ public class ECommerce {
         // show like item 
         public void showlikeitem(){
 
-            System.out.println("++++++++++++++  Add to cart item  +++++++++++++++++++");
+            System.out.println("++++++++++++++  All like  item  +++++++++++++++++++");
 
             for(int i=0;i<likeitem.size();i++){
                 System.out.println("-----------" + (i + 1) + "----------");
@@ -91,7 +91,7 @@ public class ECommerce {
 
         public void showAddtocart(){
 
-            System.out.println("++++++++++++++  Add to cart item  +++++++++++++++++++");
+            System.out.println("++++++++++++++  All add tocart item  +++++++++++++++++++");
 
             Scanner sc =new Scanner(System.in);
             for(int i=0;i<cart.size();i++){
@@ -103,7 +103,7 @@ public class ECommerce {
                 System.out.print("If you want to save this item for future profit, you can enter the item number; otherwise, enter zero : ");
                 int saveno = sc.nextInt();
                 if (saveno != 0) {
-                    likeitem.add(itemlist.get(saveno - 1));
+                    addinlikeitem(cart.get(i));
                 }
 
                 // for addtocart
@@ -111,7 +111,7 @@ public class ECommerce {
                 System.out.println("If you want to add to the cart, please enter the item number; otherwise, enter zero  : ");
                 int addtocartno = sc.nextInt();
                 if (addtocartno ==1) {
-                    cart.add(itemlist.get(addtocartno - 1));
+                    addtocart(cart.get(i));
                 }
             }
         }
@@ -181,7 +181,7 @@ public class ECommerce {
                 System.out.print("Enter the item number to order that item (if you don't want to order any product, then input 0) :  ");
                 int itemno = sc.nextInt();
 
-                if (itemno ==1) {
+                if (itemno !=0) {
                     order(itemno);
                 }
 
@@ -287,7 +287,7 @@ public class ECommerce {
                 
                 
             }
-
+  
             showallinfo();
 
 
