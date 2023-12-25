@@ -38,6 +38,24 @@ Elevate Your User Experience with Advanced Features! 🔐
 
 https://github.com/Sujit-Panigrahi5/LearnFlows/assets/128701820/36ba404d-bcc0-4acb-a157-a409d478beb7
 
+Online Movie Ticket Booking 
+
+Browse Movies:
+Explore a vast array of the latest blockbusters, timeless classics, and everything in between! Our platform provides a seamless browsing experience, making it easy for you to discover the perfect movie for your entertainment.
+
+Book Tickets:
+Secure your seats with just a few clicks! Our streamlined booking process ensures a hassle-free ticket reservation, allowing you to claim your spot for the most anticipated shows in town.
+
+View Showtimes:
+Plan your cinema outing effortlessly! Get instant access to comprehensive showtime schedules, helping you choose the perfect time slot that fits your schedule.
+
+Seat Selection:
+Enjoy the luxury of choice! Pick your preferred seats from an interactive seating chart, ensuring you have the best view in the house. Tailor your movie experience by selecting seats that suit your comfort and preferences.
+
+Ticket Cancellation Feature:
+Life happens, and plans change. No worries! Take advantage of our convenient ticket cancellation feature, providing flexibility in case you need to adjust your plans. It's all about making your movie night stress-free.
+
+
 
 
 
